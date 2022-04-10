@@ -1,59 +1,100 @@
 @extends('layouts.main')
 @section('container')
-<div>
-    <h1 class="pt-20 text-3xl font-semibold text-center">Browse Endek</h1>
-    <div class="container">
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2 mt-5">
+    <div class=" container ml-5 mt-5 position-center">
+        <div class="row text-center justify-content-center">
+            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
                 <div class="card-body">
-                    <div class="row no-gutters align-items-center px-3">
-                        <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                Jumlah Endek</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $list['jumlahendek']}}</div>
-                        </div>
-                        <div class="col-auto">
-                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                        </div>
-                    </div>
+                    <h5 class="card-title">Motif</h5>
+                    <p class="card-text">Jumlah : {{ $data['jumlahmotif'] }}</p>
+                    <a href="{{ route('daftarmotif') }}" class="btn btn-warning">Tampilkan</a>
+                </div>
+            </div>
+
+            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+                <div class="card-body">
+                    <h5 class="card-title">Bahan</h5>
+                    <p>Jumlah : {{ $data['jumlahbahan'] }}</p>
+                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                </div>
+            </div>
+
+            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+                <div class="card-body">
+                    <h5 class="card-title">Sisir</h5>
+                    <p>Jumlah : {{ $data['jumlahsisir'] }}</p>
+                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                </div>
+            </div>
+
+            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+                <div class="card-body">
+                    <h5 class="card-title">As</h5>
+                    <p>Jumlah : {{ $data['jumlahas'] }}</p>
+                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                </div>
+            </div>
+
+            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+                <div class="card-body">
+                    <h5 class="card-title">Ukuran</h5>
+                    <p>Jumlah : {{ $data['jumlahukuran'] }}</p>
+                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                </div>
+            </div>
+
+
+            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+                <div class="card-body">
+                    <h5 class="card-title">Warna</h5>
+                    <p>Jumlah : {{ $data['jumlahwarna'] }}</p>
+                    <a href="#" class="btn btn-warning">Tampilkan</a>
                 </div>
             </div>
         </div>
-        <form action="" method="GET" id="cari_kriteria">
+    </div>
+
+    <section id="featured-services" class="featured-services">
+        <div class="container" data-aos="fade-up">
+
             <div class="row">
-                <div class="col">
-                    <p class="h5 text-dark mt-2">Pilih Motif</p>
-                    <div class="dropdown"> 
-                    <select class="btn btn-light dropdown-toggle mt-2 shadow" name="cari_motif" id="cari_motif">
-                    <option value="">Pilihlah salah satu</option>
-                    @foreach($list['listmotif'] as $item)
-                        <option value="{{ $item['motif'] }}">{{ $item['motif'] }}</option>
-                    @endforeach
-                    </select>
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi</p>
                     </div>
                 </div>
-            </div> 
-            <div class="container mt-3">
-                <input type="submit" class="btn btn-primary" value="Submit" name="cari_kriteria">
-                <input type="submit" class="btn btn-danger"  name="reset" value="Reset">
-            </div>   
-        </form>
-        
-        <div class="row">
-            @foreach($list['listendek'] as $item)
-            <div class="col-md-3">
-                
-                    <div class="card mt-4" style="width: 18rem;">
-                        <img src="{{ asset('images/Endek/'.$item['gambar'])}}" class="card-img-top" alt="..." style="width:200px; height:200px;">
-                        <div class="card-body">
-                        <h5 class="card-title">{{ str_replace('_',' ',$item ['nama'])}}</h5>
-                        <a href="/detail/{{ $item['nama'] }}" class="btn btn-primary">Lihat Detail</a>
-                        </div>
-                    </div>  
-                
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="bx bx-tachometer"></i></div>
+                        <h4 class="title"><a href="">Magni Dolores</a></h4>
+                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon"><i class="bx bx-world"></i></div>
+                        <h4 class="title"><a href="">Nemo Enim</a></h4>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        </p>
+                    </div>
+                </div>
+
             </div>
-            @endforeach
-        </div>   
-         
-    </div>
+
+        </div>
+    </section>
 @endsection

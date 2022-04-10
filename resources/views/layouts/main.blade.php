@@ -15,7 +15,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="icon" href={{ asset('images/favicon.ico') }}>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <title>Endek Heritage | {{ $title }}</title>
+        <title>SIEndek | {{ $title }}</title>
 
     <style>
         body {

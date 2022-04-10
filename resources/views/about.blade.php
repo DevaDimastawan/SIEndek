@@ -3,8 +3,8 @@
 @section('container')
 
 <div class="py-20" style="background-image: url('images/endek app.jpg');">
-  <h1 class="text-3xl font-semibold text-center pt-10 text-white"> About <br> SIEndek App</h1>
-  <p class="text-center pb-5 px-5 text-white">SIEndek App merupakan sebuah aplikasi berbasis website yang memiliki informasi terkait endek. </p>
+  <h1 class="display-1 fw-normal text-center pt-10 text-white"> About <br> SIEndek</h1>
+  <p class="text-center pb-5 px-5 text-white">SIEndek merupakan sebuah aplikasi berbasis website yang memiliki informasi terkait endek. </p>
 </div>
 <div>
   <p class="text-center display-3 py-2 text-light fw-normal" style="background-color: #4065AE">Features</p>

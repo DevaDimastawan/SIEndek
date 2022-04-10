@@ -62,11 +62,21 @@
     </div>
 
     <div class="col-md-6 pt-5">
-      <h1 class="fw-bold py-3" style="color: #4065AE; font-size: 65px;">Let's Preserving</h1>
-      <h1 class="py-3" style="font-size: 65px;">Our Heritage</h1>
-      <h1 class="py-3" style="font-size: 65px;">About</h1>
-      <h1 class="fw-bold py-3" style="color: #4065AE; font-size: 65px;">Endek</h1>
-      <h1 class="pt-3" style="font-size: 65px;">From This Website</h1>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <h1 class="fw-bold py-3" style="color: #4065AE; font-size: 65px;">Let's Preserving</h1>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <h1 class="py-3" style="font-size: 65px;">Our Heritage</h1>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <h1 class="py-3" style="font-size: 65px;">About</h1>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <h1 class="fw-bold py-3" style="color: #4065AE; font-size: 65px;">Endek</h1>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <h1 class="pt-3" style="font-size: 65px;">From This Website</h1>
+      </div>
     </div>
 
   </div>

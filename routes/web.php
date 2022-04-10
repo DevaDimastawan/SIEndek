@@ -5,7 +5,7 @@ use App\Http\Controllers\DetailController;
 use App\Http\Controllers\BrowsingController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SearchingController;
-
+use App\Http\Controllers\MotifController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +45,5 @@ Route::get('/dashboard', [DashboardController::class,'show']);
  
 Route::get('/detail/{namaendek}', [DetailController::class,'index']);
 
+Route::get('/motifendek', [MotifController::class, 'daftar'])->name('daftarmotif');
+Route::get('/motifendek/{hasilmotif}', [MotifController::class, 'show'])->name('showendekmotif');
