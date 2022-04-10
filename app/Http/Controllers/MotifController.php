@@ -26,7 +26,7 @@ class MotifController extends Controller
         public function show($motif)
     {
          //query untuk mengambil data skincare berdasarkan tipe kulit tertentu dan disimpan pada variabel result
-         $getendek = $this->sparql->query("SELECT* WHERE {?motif endek:memilikiMotif endek:".$motif."; endek:memilikiGambar ?gambar .} ORDER BY ?motif");
+         $getendek = $this->sparql->query("SELECT * WHERE {?motif endek:memilikiMotif endek:".$motif."; endek:memilikiGambar ?gambar .} ORDER BY ?motif");
          $hasil= [];
          $jumlah = 0;
          foreach($getendek as $item){

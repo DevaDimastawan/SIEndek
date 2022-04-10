@@ -1,59 +1,58 @@
 @extends('layouts.main')
 @section('container')
-    <div class=" container ml-5 mt-5 position-center">
+    <div class=" container mt-5 browsing">
         <div class="row text-center justify-content-center">
-            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+            <div class="col-lg-4 mb-3 mx-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card-body">
                     <h5 class="card-title">Motif</h5>
                     <p class="card-text">Jumlah : {{ $data['jumlahmotif'] }}</p>
-                    <a href="{{ route('daftarmotif') }}" class="btn btn-warning">Tampilkan</a>
+                    <a href="{{ route('daftarmotif') }}" class="btn btn-primary">Tampilkan</a>
                 </div>
             </div>
-
-            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+            <div class="col-lg-4 mb-3 mx-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card-body">
                     <h5 class="card-title">Bahan</h5>
                     <p>Jumlah : {{ $data['jumlahbahan'] }}</p>
-                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                    <a href="{{ route('daftarbahan') }}" class="btn btn-primary">Tampilkan</a>
                 </div>
             </div>
 
-            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+            <div class="col-lg-4 mb-3 mx-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card-body">
                     <h5 class="card-title">Sisir</h5>
                     <p>Jumlah : {{ $data['jumlahsisir'] }}</p>
-                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                    <a href="{{ route('daftarsisir') }}" class="btn btn-primary">Tampilkan</a>
                 </div>
             </div>
 
-            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+            <div class="col-lg-4 mb-3 mx-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card-body">
                     <h5 class="card-title">As</h5>
                     <p>Jumlah : {{ $data['jumlahas'] }}</p>
-                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                    <a href="{{ route('daftaras') }}" class="btn btn-primary">Tampilkan</a>
                 </div>
             </div>
 
-            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+            <div class="col-lg-4 mb-3 mx-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card-body">
                     <h5 class="card-title">Ukuran</h5>
                     <p>Jumlah : {{ $data['jumlahukuran'] }}</p>
-                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                    <a href="{{ route('daftarukuran') }}" class="btn btn-primary">Tampilkan</a>
                 </div>
             </div>
 
 
-            <div class="card border-warning col-lg-4 mb-3 mx-4" style="width: 18rem; height:9rem">
+            <div class="col-lg-4 mb-3 mx-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="card-body">
                     <h5 class="card-title">Warna</h5>
                     <p>Jumlah : {{ $data['jumlahwarna'] }}</p>
-                    <a href="#" class="btn btn-warning">Tampilkan</a>
+                    <a href="{{ route('daftarwarna') }}" class="btn btn-primary">Tampilkan</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="featured-services" class="featured-services">
+    {{-- <section id="featured-services" class="featured-services">
         <div class="container" data-aos="fade-up">
 
             <div class="row">
@@ -96,5 +95,5 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
 @endsection

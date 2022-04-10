@@ -15,13 +15,107 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="icon" href={{ asset('images/favicon.ico') }}>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>SIEndek | {{ $title }}</title>
 
     <style>
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        
+        .browsing .card-body{
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+        z-index: 1;
+        }
+        .browsing .card-body:hover::before{
+        background: #106eea;
+        top: 0;
+        border-radius: 0px;
+        
+        }
+        .browsing .card-body::before{
+        content: "";
+        position: absolute;
+        background: #cbe0fb;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 100%;
+        transition: all 0.3s;
+        z-index: -1;
+        }
+        .browsing .card-body:hover{
+        color: white
+        }
+        .daftarmotif{
+        transition:.5s;
+        
         }
 
+        .daftarmotif:hover{
+        transform:scale(1.1);
+        }
+        .daftarbahan{
+        transition:.5s;
+        
+        }
+
+        .daftarbahan:hover{
+        transform:scale(1.1);
+        }
+        .daftaras{
+        transition:.5s;
+        
+        }
+
+        .daftaras:hover{
+        transform:scale(1.1);
+        }
+        .daftarukuran{
+        transition:.5s;
+        
+        }
+
+        .daftarukuran:hover{
+        transform:scale(1.1);
+        }
+        .daftarwarna{
+        transition:.5s;
+        
+        }
+
+        .daftarwarna:hover{
+        transform:scale(1.1);
+        }
+
+        .daftarsisir{
+        transition:.5s;
+        
+        }
+
+        .daftarsisir:hover{
+        transform:scale(1.1);
+        }
+
+        .browsing .card-body:hover .btn{
+        background-color: white !important;
+        color: #106eea !important;
+        }
+        .endek{
+        color: white
+        }
+
+        .endek:hover{
+        color: #FBBD5A
+        }
     </style>
 
 </head>
@@ -38,12 +132,6 @@
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Footer-->
 
-
-    <script>
-        var select = document.getElementById('cari_warna');
-        multi(select, [])
-    </script>
-
     <script src="{{ asset('js/aos.js') }}"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -54,6 +142,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"
         integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        });
+        </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
