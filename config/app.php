@@ -121,7 +121,7 @@ return [
     |
     */
 
-    'key' => 'base64:NF2aAH2wwYSL4Gfei6mn7jm8M3nkW3kSJWD0zpOXQas=base64:Vl8kdGTorXPpPgxIJ/XNuwy7zR9OMcPNXc/vFjZHpCo=',
+    'key' => 'base64:W/3DAEYgDqbQLz7DfCpU2rV/RMkg7XAE81Jmz1R9Qdk=',
 
     'cipher' => 'AES-256-CBC',
 
