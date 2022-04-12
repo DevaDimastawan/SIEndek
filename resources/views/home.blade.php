@@ -42,14 +42,14 @@
     </div>
 
     <!-- Home Content -->
-    <div class=" container mt-14">
+    <div class=" container mt-5">
         <div class="row">
             <div class="pl-5 col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column">
                 <div class="container">
                     <h1 class="text-4xl font-bold" data-aos="fade-up" style="color: #4065AE">Endek</h1>
-                    <p class="text-justify pt" data-aos="fade-up" data-aos-delay="400 py-3">Endek adalah salah satu hasil
-                        kerajinan tenun yang memiliki ragam hias yang beragam dan dikerjakan dengan menggunakan teknik ikat
-                        tunggal atau single ikat. Kain endek mulai berkembang sejak abad ke-16, yaitu masa pemerintahan Raja
+                    <p class="text-justify" data-aos="fade-up" data-aos-delay="400 py-3">Endek adalah salah satu hasil
+                        kerajinan tenun yang memiliki ragam hias yang beragam dan dikerjakan dengan menggunakan teknik ikat 
+                        tunggal atau single ikat. Kain endek mulai berkembang sejak abad ke-16, yaitu masa pemerintahan Raja
                         Dalem Waturenggong di Gelgel, Klungkung. Kain endek ini kemudian berkembang di sekitar daerah
                         Klungkung, salah satunya adalah di Desa Sulang. Di desa Sulang, kain tenun endek dipelopori oleh
                         Wayan Rudja yang saat itu memiliki tenaga kerja sekitar 200 karyawan.</p>

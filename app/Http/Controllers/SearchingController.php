@@ -7,12 +7,12 @@ class SearchingController extends Controller
 {   
     public function searching (Request $request) 
     {
-        $motif = $this -> sparql -> query('SELECT * WHERE{?motif a endek:Motif}');
-        $bahan = $this -> sparql -> query('SELECT * WHERE{?bahan a endek:menggunakanBahan}');
-        $asmotif = $this -> sparql -> query('SELECT * WHERE{?asmotif a endek:AsKedetailanMotif}');
-        $sisir = $this -> sparql -> query('SELECT * WHERE{?sisir a endek:Sisir}');
-        $ukurankain = $this-> sparql -> query('SELECT * WHERE{?ukurankain a endek:UkuranKain}');
-        $warna = $this -> sparql -> query('SELECT * WHERE{?warna a endek:Warna}');
+        $motif = $this -> sparql -> query('SELECT * WHERE{?motif a endek:Motif} ORDER BY ?motif');
+        $bahan = $this -> sparql -> query('SELECT * WHERE{?bahan a endek:menggunakanBahan} ORDER BY ?bahan');
+        $asmotif = $this -> sparql -> query('SELECT * WHERE{?asmotif a endek:AsKedetailanMotif} ORDER BY ?asmotif');
+        $sisir = $this -> sparql -> query('SELECT * WHERE{?sisir a endek:Sisir} ORDER BY ?sisir');
+        $ukurankain = $this-> sparql -> query('SELECT * WHERE{?ukurankain a endek:UkuranKain} ORDER BY ?ukurankain');
+        $warna = $this -> sparql -> query('SELECT * WHERE{?warna a endek:Warna} ORDER BY ?warna');
 
         
         $resultmotif=[];
@@ -131,7 +131,7 @@ class SearchingController extends Controller
                 $sql = $sql;
             }
 
-            $sql = $sql . '}';
+            $sql = $sql . '} ORDER BY ?endek';
             $querydata = $this->sparql->query($sql);
             $resultendek = [];
             if($i===0){
@@ -141,6 +141,7 @@ class SearchingController extends Controller
                 foreach ($querydata as $item){
                     array_push($resultendek, [
                         'nama' => $this->parseData($item->endek->getUri())
+
                     ]);
                 }
             }

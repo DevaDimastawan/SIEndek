@@ -45,7 +45,7 @@ class BrowsingController extends Controller
             );
     
 
-        return view('browsing', ['data' => $data, 'title' => 'Browsing']);
+        return view('browsing', ['data' => $data, 'title' => 'Browsing',  ]);
     }
 }
 

@@ -116,6 +116,9 @@
         .endek:hover{
         color: #FBBD5A
         }
+        .text-justify{
+            text-align: justify
+        }
     </style>
 
 </head>

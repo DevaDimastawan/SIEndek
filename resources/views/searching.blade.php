@@ -121,8 +121,8 @@
                     <ol class="list-group list-group-numbered">
                         @foreach ($list['listendek'] as $item)
                             <li class="text-white"><a>
-                                    <a class="endek" href="/detail/{{ $item['nama']}}"
-                                        style="text-decoration:none;">{{ str_replace('_', ' ', $item['nama']) }} </a>
+                                    <a class="endek" href="/detail/{{$item['nama']}}"
+                                        style="text-decoration:none; ">{{ str_replace('_', ' ', $item['nama'])}}  </a>
                             </li>
                         @endforeach
                     </ol>
