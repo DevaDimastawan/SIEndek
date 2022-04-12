@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('container')
-    <div class="py-20" style="background-image: url('images/endek app.jpg');">
-        <h1 class="display-1 fw-normal text-center pt-10 text-white"> About <br> SIEndek</h1>
+    <div class="py-22 d-block" style="background-image: url('images/endek app.jpg'); background-repeat:no-repeat; width:100%">
+        <div class="display display-1 text-center pt-5 fw-semibold" style="color: white"> About <br> SIEndek</div>
         <p class="text-center pb-5 px-5 text-white">SIEndek merupakan sebuah aplikasi berbasis website yang memiliki
             informasi terkait endek. </p>
         <p class="text-center display-3 py-2 text-light fw-normal" style="background-color: #4065AE">Features</p>

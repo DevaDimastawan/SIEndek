@@ -119,6 +119,10 @@
         .text-justify{
             text-align: justify
         }
+        .about .display{
+            text-align: center;
+            color:white;
+        }
     </style>
 
 </head>

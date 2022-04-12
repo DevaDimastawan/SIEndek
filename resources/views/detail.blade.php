@@ -13,21 +13,28 @@
                         <h5 class="card-title">{{ str_replace('_', ' ', $item['Nama']) }}</h5>
                         <p class="card-text">{{ $item['Deskripsi'] }}</p>
                         <div class="container py-8 text-lg" style="border-radius:10px; background:#4065AE">
-                            {{-- <div class="row pt-3">
-                        <div class="col md-6">
-                            <p class="h5 py-4 px-5 text-light">Motif : {{ $item['Motif'] }}</p>
-                            <p class="h5 py-4 px-5 text-light">Sisir : {{ $item['Sisir'] }}</p>
-                            <p class="h5 py-4 px-5 text-light">As    : {{ str_replace ('_',' ',$item['As'] )}}</p>
-                            <p class="h5 py-4 px-5 text-light">Corak : {{ $item['Corak'] }}</p>
+                            <div class="row pt-3">
+                                <div class="col md-6">
+                                    <p class="h5 py-4 px-5 text-light">Motif : {{ $item['Motif'] }}</p>
+                                    <p class="h5 py-4 px-5 text-light">Sisir : {{ $item['Sisir'] }}</p>
+                                    <p class="h5 py-4 px-5 text-light">As : {{ str_replace('_', ' ', $item['As']) }}</p>
+                                    <p class="h5 py-4 px-5 text-light">Corak : {{ $item['Corak'] }}</p>
+                                </div>
+                                <div class="col md-6">
+                                    <p class="h5 py-4 px-5 text-light">Bahan : {{ str_replace('_', ' ', $item['Bahan']) }}
+                                    <p class="h5 py-4 px-5 text-light">Ukuran : {{ $item['UkuranKain'] }}</p>
+                                    <p class="h5 py-4 px-5 text-light">Warna : {{ $item['Warna'] }}</p>
+                                    <p class="h5 py-4 px-5 text-light">Kabupaten : {{ $item['Kabupaten'] }}</p>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <div class="col md-6">
-                            <p class="h5 py-4 px-5 text-light">Bahan  : {{ str_replace ('_',' ',$item['Bahan'] )}}
-                            <p class="h5 py-4 px-5 text-light">Ukuran : {{ $item['UkuranKain'] }}</p>
-                            <p class="h5 py-4 px-5 text-light">Warna  : {{ $item['Warna'] }}</p>
-                            <p class="h5 py-4 px-5 text-light">Kabupaten : {{ $item['Kabupaten'] }}</p>
-                        </div>
-                    </div> --}}
-                            <div class="grid grid-cols-2 gap-8 ">
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+                                {{-- <div class="grid grid-cols-2 gap-8 ">
                                 <div>
                                     <p class="text-light">Motif : {{ $item['Motif'] }}</p>
                                 </div>
@@ -52,14 +59,8 @@
                                 <div>
                                     <p class="text-light">Kabupaten : {{ $item['Kabupaten'] }}</p>
                                 </div>
-                            </div>
+                            </div> --}}
                             {{-- <div class="col md-6">
                             
                         </div> --}}
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
