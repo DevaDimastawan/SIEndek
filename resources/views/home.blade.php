@@ -48,7 +48,7 @@
                 <div class="container">
                     <h1 class="text-4xl font-bold" data-aos="fade-up" style="color: #4065AE">Endek</h1>
                     <p class="text-justify" data-aos="fade-up" data-aos-delay="400 py-3">Endek adalah salah satu hasil
-                        kerajinan tenun yang memiliki ragam hias yang beragam dan dikerjakan dengan menggunakan teknik ikat 
+                        kerajinan tenun yang memiliki ragam hias yang beragam dan dikerjakan dengan menggunakan teknik ikat
                         tunggal atau single ikat. Kain endek mulai berkembang sejak abad ke-16, yaitu masa pemerintahan Raja
                         Dalem Waturenggong di Gelgel, Klungkung. Kain endek ini kemudian berkembang di sekitar daerah
                         Klungkung, salah satunya adalah di Desa Sulang. Di desa Sulang, kain tenun endek dipelopori oleh
@@ -70,14 +70,15 @@
         </div>
     </div>
 
-    <div class="container p-5 mt-5" data-aos="fade-down" data-aos-duration="1500">
-        <div class="row">
-
-            <div class="col-md-6">
-                <img class="d-block mx-auto py-3" src={{ asset('images/endek-preserving.png') }} alt="Endek Preserving" />
+    <div class=" container mt-5">
+    <div class="row">
+        <div class="pl-5 col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column">
+            <div class="container">
+                <img class="mx-auto py-3 img-fluid animated" style="vh-100"
+                        src={{ asset('images/endek-preserving.png') }} alt="Endek Preserving" />
             </div>
-
-            <div class="col-md-6 pt-5">
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 mt-5">
                 <div data-aos="fade-up" data-aos-delay="900">
                     <h1 class="fw-bold py-3" style="color: #4065AE; font-size: 65px;">Let's Preserving</h1>
                 </div>
@@ -94,9 +95,19 @@
                     <h1 class="pt-3" style="font-size: 65px;">From This Website</h1>
                 </div>
             </div>
-
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+    
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
