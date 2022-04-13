@@ -1,10 +1,17 @@
 @extends('layouts.main')
 @section('container')
-    <div class="py-22 d-block" style="background-image: url('images/endek app.jpg'); background-repeat:no-repeat; width:100%">
-        <div class="display display-1 text-center pt-5 fw-semibold" style="color: white"> About <br> SIEndek</div>
-        <p class="text-center pb-5 px-5 text-white">SIEndek merupakan sebuah aplikasi berbasis website yang memiliki
-            informasi terkait endek. </p>
+    <div class="card bg-dark text-white" style="border-radius: 0px">
+        <img src="images/endek app.jpg" class="card-img" alt="..." style="height: 400px;">
+        <div class="card-img-overlay">
+            <h5 class="card-title text-center pt-5 fw-bold display-1" style="margin-top: 50px; color:#FBBD5A">SI<span
+                    style="color: white">Endek</span> </h5>
+            <p class="card-text text-center pt-2">Aplikasi SIEndek merupakan sebuah website yang memberikan informasi
+                mengenai Endek dan terdapat fitur Searching dan Browsing</p>
+        </div>
+    </div>
+    <div>
         <p class="text-center display-3 py-2 text-light fw-normal" style="background-color: #4065AE">Features</p>
+    </div>
     </div>
     <div class="container">
         <div class="row">

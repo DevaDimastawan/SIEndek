@@ -19,14 +19,14 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src={{ asset('images/endek-carousel.png') }} class="d-block w-100" alt="Endek Carousel"
+                <img src={{ asset('images/endek-carousel-22.png') }} class="d-block w-100" alt="Endek Carousel"
                     style="filter: brightness(35%)">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
             </div>
             <div class="carousel-item">
-                <img src={{ asset('images/endek-carousel.png') }} class="d-block w-100" alt="Endek Carousel"
-                    style="filter: brightness(35%)">
+                <img src={{ asset('images/endek-carousel-33.png') }} class="d-block w-100" alt="Endek Carousel"
+                    style="filter: brightness(35%); width:800px height:225px">
                 <div class="carousel-caption d-none d-md-block">
                 </div>
             </div>
