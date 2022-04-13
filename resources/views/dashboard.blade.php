@@ -25,7 +25,7 @@
             </div>
         </div>
         <h1 class="text-center mt-3 text-3xl font-bold">Dashboard</h1>
-        <p class="text-center mt-3 text-lg">Here are the <span class="text-indigo-500">collections of our Endek</span>.</p>
+        <p class="text-center mt-3 text-lg">Here are the <span style="color:#6930C3">collections of our Endek</span>.</p>
     </div>
     <div class="container">
         <div class="row">
