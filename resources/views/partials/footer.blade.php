@@ -10,7 +10,7 @@
         <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
         <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">About</a></li>
         <li class="nav-item"><a href="/dashboard" class="nav-link px-2 text-muted">Dashboard</a></li>
-        <li class="nav-item"><a href="/searching" class="nav-link px-2 text-muted">Searching</a></li>
+        <li class="nav-item"><a href="/searchingmenu" class="nav-link px-2 text-muted">Searching</a></li>
         <li class="nav-item"><a href="/browsing" class="nav-link px-2 text-muted">Browsing</a></li>
       </ul>
     </footer>

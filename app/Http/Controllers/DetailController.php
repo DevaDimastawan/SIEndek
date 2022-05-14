@@ -41,7 +41,5 @@ class DetailController extends Controller
             "detail" => $result
         ]);
     }  
-    }
-
-
+}
 ?>

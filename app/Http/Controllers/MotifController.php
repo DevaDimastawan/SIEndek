@@ -9,7 +9,7 @@ class MotifController extends Controller
 
         public function daftar()
     {
-        //query untuk mengambil data tipe kulit skincare dan disimpan pada variabel result
+         //query untuk mengambil data motif yang terdapat pada ontologi endek.owl 1 dan disimpan pada variabel resultmotif
         $motif = $this->sparql->query('SELECT * WHERE {?motif a endek:Motif} ORDER BY ?motif');
         $resultmotif = [];
         foreach($motif as $item){
@@ -25,7 +25,7 @@ class MotifController extends Controller
 
         public function show($motif)
     {
-         //query untuk mengambil data skincare berdasarkan tipe kulit tertentu dan disimpan pada variabel result
+         //query untuk mengambil data motif tertentu dan disimpan pada variabel hasil
          $getendek = $this->sparql->query("SELECT * WHERE {?motif endek:memilikiMotif endek:".$motif."; endek:memilikiGambar ?gambar .} ORDER BY ?motif");
          $hasil= [];
          $jumlah = 0;

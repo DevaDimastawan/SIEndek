@@ -19,8 +19,9 @@
           <a class="nav-link dropdown-toggle {{ ($title === "Features") ? 'active' : '' }}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Features
           </a>
+          
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/searching">Searching</a></li>
+            <li><a class="dropdown-item" href="/searchingmenu">Searching</a></li>
             <li><a class="dropdown-item" href="/browsing">Browsing</a></li>
           </ul>
       </ul>

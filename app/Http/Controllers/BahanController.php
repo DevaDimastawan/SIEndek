@@ -9,7 +9,7 @@ class BahanController extends Controller
 
         public function daftar()
     {
-        //query untuk mengambil data tipe kulit skincare dan disimpan pada variabel result
+         //query untuk mengambil data bahan yang terdapat pada ontologi endek.owl 1 dan disimpan pada variabel resultbahan
         $bahan = $this->sparql->query('SELECT * WHERE {?bahan a endek:Bahan} ORDER BY ?bahan');
         $resultbahan = [];
         foreach($bahan as $item){
@@ -25,7 +25,7 @@ class BahanController extends Controller
 
         public function show($bahan)
     {
-         //query untuk mengambil data skincare berdasarkan tipe kulit tertentu dan disimpan pada variabel result
+         //query untuk mengambil data bahan tertentu dan disimpan pada variabel hasil
          $getendek = $this->sparql->query("SELECT * WHERE {?bahan endek:menggunakanBahan endek:".$bahan."; endek:memilikiGambar ?gambar .} ORDER BY ?bahan");
          $hasil= [];
          $jumlah = 0;

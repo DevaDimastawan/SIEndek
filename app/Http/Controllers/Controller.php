@@ -22,7 +22,7 @@ class Controller extends BaseController
         RdfNamespace::set('owl', 'http://www.w3.org/2002/07/owl#');
         RdfNamespace::set('endek', 'http://www.semanticweb.org/macbookpro/ontologies/2021/8/untitled-ontology-16#');
 
-        $this->sparql = new Client('http://lokapaladigital.com:3030/siendek/query');
+        $this->sparql = new Client('http://localhost:3030/siendek/query');
     }
 
     public function parseData($str){

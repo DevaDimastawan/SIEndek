@@ -5,6 +5,7 @@ use App\Http\Controllers\DetailController;
 use App\Http\Controllers\BrowsingController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SearchingController;
+use App\Http\Controllers\Searching2Controller;
 use App\Http\Controllers\MotifController;
 use App\Http\Controllers\BahanController;
 use App\Http\Controllers\SisirController;
@@ -42,7 +43,15 @@ Route::get('/features', function () {
     ]);
 });
 
+Route::get('/searchingmenu', function () {
+    return view('searchingmenu',[
+        "title" => "Features"
+    ]);
+});
+
+
 Route::get('/searching', [SearchingController::class, 'searching']);
+Route::get('/searching2', [Searching2Controller::class, 'index']);
 
 Route::get('/browsing', [BrowsingController::class, 'browsing']);
 

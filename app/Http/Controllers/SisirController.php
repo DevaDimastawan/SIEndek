@@ -9,7 +9,7 @@ class SisirController extends Controller
 
         public function daftar()
     {
-        //query untuk mengambil data tipe kulit skincare dan disimpan pada variabel result
+         //query untuk mengambil data sisir yang terdapat pada ontologi endek.owl 1 dan disimpan pada variabel resultsisir
         $sisir = $this->sparql->query('SELECT * WHERE {?sisir a endek:Sisir} ORDER BY ?sisir');
         $resultsisir = [];
         foreach($sisir as $item){
@@ -25,7 +25,7 @@ class SisirController extends Controller
 
         public function show($sisir)
     {
-         //query untuk mengambil data skincare berdasarkan tipe kulit tertentu dan disimpan pada variabel result
+         //query untuk mengambil data sisir tertentu dan disimpan pada variabel hasil
          $getendek = $this->sparql->query("SELECT * WHERE {?sisir endek:memilikiSisir endek:".$sisir."; endek:memilikiGambar ?gambar .} ORDER BY ?sisir");
          $hasil= [];
          $jumlah = 0;

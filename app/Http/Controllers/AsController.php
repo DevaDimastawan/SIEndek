@@ -9,7 +9,7 @@ class AsController extends Controller
 
         public function daftar()
     {
-        //query untuk mengambil data tipe kulit skincare dan disimpan pada variabel result
+         //query untuk mengambil data askedetailanmotif yang terdapat pada ontologi endek.owl 1 dan disimpan pada variabel resultbahan
         $asendek = $this->sparql->query('SELECT * WHERE {?asendek a endek:AsKedetailanMotif} ORDER BY ?asendek');
         $resultasendek = [];
         foreach($asendek as $item){
@@ -25,7 +25,7 @@ class AsController extends Controller
 
         public function show($asendek)
     {
-         //query untuk mengambil data skincare berdasarkan tipe kulit tertentu dan disimpan pada variabel result
+          //query untuk mengambil data as yang terdapat pada ontologi endek.owl 1 dan disimpan pada variabel hasil
          $getendek = $this->sparql->query("SELECT * WHERE {?asendek endek:memilikiAs endek:".$asendek."; endek:memilikiGambar ?gambar .} ORDER BY ?asendek");
          $hasil= [];
          $jumlah = 0;

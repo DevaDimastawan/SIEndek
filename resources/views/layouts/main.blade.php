@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <title>SIEndek | {{ $title }}</title>
 
     <style>
@@ -122,6 +123,22 @@
         .about .display{
             text-align: center;
             color:white;
+        }
+        .searching1{
+        transition:.5s;
+        
+        }
+
+        .searching1:hover{
+        transform:scale(1.1);
+        }
+        .searching2{
+        transition:.5s;
+        
+        }
+
+        .searching2:hover{
+        transform:scale(1.1);
         }
     </style>
 
